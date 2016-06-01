@@ -1,0 +1,20 @@
+@import '_default';
+
+.jumbotron {
+  background: transparent;
+  position: relative;
+
+  &:after {
+    content: '';
+    background: url('../img/new_year_background.png') repeat;
+
+    position: absolute;
+    top: 0;
+    left: -50%;
+
+    width: 200%;
+    height: 100%;
+
+    z-index: -1;
+  }
+}

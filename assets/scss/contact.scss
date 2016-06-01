@@ -1,0 +1,61 @@
+@import '_default';
+
+._social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 25px;
+
+  li {
+    border-radius: 2.5px;
+
+    a {
+      font-size: $font-medium;
+
+      &:hover {
+        .ion-ios-email-outline {
+          color: tint(#007ee5, 25%);
+        }
+
+        .ion-social-facebook-outline {
+          color: tint(#3b5998, 25%);
+        }
+
+        .ion-social-twitter-outline {
+          color: tint(#55acee ,25%);
+        }
+
+        .ion-social-instagram-outline {
+          color: tint(#e95950, 25%);
+        }
+
+        .ion-social-github {
+          color: tint($black, 25%);
+        }
+      }
+
+      .ion-ios-email-outline {
+        color: #007ee5;
+      }
+
+      .ion-social-facebook-outline {
+        color: #3b5998;
+      }
+
+      .ion-social-twitter-outline {
+        color: #55acee;
+      }
+
+      .ion-social-instagram-outline {
+        color: #e95950;
+      }
+
+      .ion-social-github {
+        color: $black;
+      }
+    }
+  }
+}

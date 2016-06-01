@@ -1,0 +1,25 @@
+@import '_default';
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.nav-link {
+  color: $blue;
+
+  &:focus,
+  &:active {
+    color: $blue;
+  }
+
+  &:before {
+    content: '//';
+    visibility: hidden;
+  }
+
+  &:hover {
+    color: lightgrey;
+    &:before { visibility: visible; }
+  }
+}
