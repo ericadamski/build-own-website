@@ -15,4 +15,9 @@ gulp.task('compress', ['clean'], () =>
     .pipe(gulp.dest(path.join(__dirname, 'public', 'dist', 'css')))
 );
 
-gulp.task('default', ['compress']);
+gulp.task('relocate:images', () =>
+  gulp.src(path.join(__dirname, 'public', 'img', '*'))
+    .pipe(gulp.dest(path.join(__dirname, 'public', 'dist', 'img')))
+);
+
+gulp.task('default', ['compress', 'relocate:images']);
