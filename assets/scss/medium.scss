@@ -1,0 +1,32 @@
+#medium {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .medium-post {
+    width: 100vw;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px 0px rgba(grey, 0.2);
+
+    margin: 25px 0;
+    padding: 15px;
+
+    @media (min-width: 800px) {
+      max-width: 600px;
+    }
+
+    a {
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+
+    .section-divider {
+      visibility: hidden;
+    }
+  }
+}
